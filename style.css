@@ -1,0 +1,14 @@
+
+.card-container {
+  position: relative;
+}
+
+.card-info {
+  position: absolute;
+  top: 0;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
