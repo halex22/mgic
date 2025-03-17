@@ -1,11 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+  font-family: "EB Garamond", serif;
+  background-color: rgb(252, 249, 244);
+}
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.site-title {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem;
+}
+
 
 .card-container {
   position: relative;
+  max-width: 250px;
+}
+
+.card-img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .card-info {
   position: absolute;
-  top: 0;
+  bottom: 0;
+  padding: 0 0.5rem 1rem 1rem;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  width: calc(100% - 16px - 8px);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8)
 }
 
 .card-details {
