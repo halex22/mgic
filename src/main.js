@@ -14,8 +14,9 @@ function render(cardInfo) {
   mainContainer.classList.add('card-container')
 
   const img = document.createElement('img')
-  img.src = cardInfo.imageUrl
+  img.src = cardInfo.imageUrl ?? '/public/fr7g5swymhc41.webp'
   img.classList.add('card-img')
+  img.loading = 'lazy'
 
 
   const infoContainer = document.createElement('div')
